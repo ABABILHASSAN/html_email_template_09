@@ -1,0 +1,232 @@
+:root{
+        --main-bg: #C6C4C6;
+        --bg: #fff;
+        --black: #252329;
+        --white: #fff;
+}
+
+
+*{
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        transition: all .2s linear;
+}
+
+
+
+html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-padding-top: 5.5rem;
+        scroll-behavior: smooth;
+
+}
+
+body{
+        background-color: var(--main-bg);
+        padding: 0 2% 2% 2%;
+}
+
+img{
+        width: 100%;
+}
+
+.line{
+        clear: both;
+        width: 100%;
+        height: .5rem;
+        background: var(--black);
+}
+
+.wrapper{
+        background-color: var(--bg);
+        max-width: 750px;
+        margin: 0 auto;
+}
+
+.wrapper .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 2rem 9%;
+        background: var(--white);
+}
+
+.wrapper .header .logo_area img{
+        max-width: 23rem;
+}
+
+.wrapper .header .icon img{
+        max-width: 5rem;
+}
+
+.wrapper .section_one .box_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        text-align: center;
+        padding: 1rem 2% 4rem 2%;
+}
+
+.wrapper .section_one .box_container .box{
+        width: 200px;
+}
+
+.wrapper .section_one .box_container .box h2{
+        font-size: 2.5rem;
+        padding-bottom: 1.5rem;
+        color: var(--black);
+}
+
+.wrapper .section_one .box_container .box p{
+        font-size: 1.5rem;
+        color: var(--black);
+        line-height: 2rem;
+}
+
+.wrapper .section_two .side_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 2rem;
+        background: var(--black);
+        padding: 3rem 2%;
+        color: var(--white);
+}
+
+.wrapper .section_two .side_container .text h3{
+        font-size: 2rem;
+        font-weight: bold;
+        padding-bottom: 2.5rem;
+}
+
+.wrapper .section_two .side_container .text p{
+        font-size: 1.9rem;
+        padding-bottom: 2rem;
+}
+
+.wrapper .section_two .side_container .text button{
+        padding: 1rem 2rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--black);
+        border-radius: .5rem;
+}
+
+.wrapper .section_three{
+        background-color: var(--white);
+        padding: 5rem 5%;
+        text-align: center;
+}
+.wrapper .section_three h2{
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+        color: var(--black);
+}
+
+.wrapper .section_three p{
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        color: var(--black);
+        padding-bottom: 2rem;
+}
+
+.wrapper .section_three button{
+        padding: 1rem 2rem;
+        background: var(--black);
+        color: var(--white);
+        font-size: 2rem;
+        font-weight: bolder;
+        border-radius: .5rem;
+}
+
+.wrapper .footer{
+        background: var(--black);
+        padding: 5rem 2%;
+        text-align: center;
+        color: var(--white);
+}
+
+.wrapper .footer img{
+        max-width: 23rem;
+        padding-bottom: 2rem;
+}
+
+.wrapper .footer p{
+        font-size: 2rem;
+}
+
+.wrapper .footer .icon{
+        padding-top: 2rem;
+}
+
+.wrapper .footer .icon img{
+        width: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries starts */
+
+
+@media (max-width: 768px){
+       html{
+        font-size: 55%;
+       }
+}
+
+
+@media (max-width: 650px){
+
+        body{
+                padding: 0 0 4% 0;
+        }
+
+        .wrapper .header{
+                justify-content: center;
+                flex-direction: column;
+        }
+}
+
+
+@media (max-width: 600px){
+        .wrapper .section_two .side_container{
+                flex-direction: column;
+                gap: 4rem;
+                padding: 3rem 10%;
+        }
+}
+
+
+
+@media (max-width: 450px){
+       html{
+        font-size: 50%;
+       }
+
+       .wrapper .section_two .side_container{
+        padding: 3rem 2%;
+}
+}
+
+/* media queries ends */
